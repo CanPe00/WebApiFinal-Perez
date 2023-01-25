@@ -22,7 +22,7 @@ namespace SWProvincias_Perez.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Provincia>> Get() 
         {
-            return context.provinicias.ToList();
+            return context.provinicias.Include(c=>c.ciudades).ToList();
         }
 
         [HttpPost]

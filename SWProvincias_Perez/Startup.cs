@@ -27,6 +27,7 @@ namespace SWProvincias_Perez
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DBPaisFinalContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDB")));
+            services.AddMvc().AddNewtonsoftJson(o=>o.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddControllers();
         }
 

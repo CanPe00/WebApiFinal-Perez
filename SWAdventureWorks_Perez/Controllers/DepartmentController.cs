@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SWAdventureWorks_Perez.Models;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace SWAdventureWorks_Perez.Controllers
 {
@@ -60,6 +62,35 @@ namespace SWAdventureWorks_Perez.Controllers
             context.Departments.Add(department);
             context.SaveChanges();
             return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Put(int id, [FromBody]Department department)
+        {
+            if (id != department.DepartmentId)
+            {
+                return BadRequest();
+            }
+            context.Entry(department).State = EntityState.Modified;
+            context.SaveChanges();
+            return NoContent();
+
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<Department> Delete(int id)
+        {
+            Department department = (from d in context.Departments
+                                     where d.DepartmentId==id
+                                     select d).SingleOrDefault();
+            if (department == null)
+            {
+                return NotFound();
+            }
+            context.Departments.Remove(department);
+            context.SaveChanges();
+            return department;
+
         }
 
 
