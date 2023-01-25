@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWProvincias_Perez", "SWProvincias_Perez\SWProvincias_Perez.csproj", "{16996F39-F25C-42A2-99F9-1A2054D69ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWAdventureWorks_Perez", "SWAdventureWorks_Perez\SWAdventureWorks_Perez.csproj", "{F79CA144-7A74-444D-8CF3-4491EF21171A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16996F39-F25C-42A2-99F9-1A2054D69ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16996F39-F25C-42A2-99F9-1A2054D69ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16996F39-F25C-42A2-99F9-1A2054D69ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16996F39-F25C-42A2-99F9-1A2054D69ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79CA144-7A74-444D-8CF3-4491EF21171A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79CA144-7A74-444D-8CF3-4491EF21171A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79CA144-7A74-444D-8CF3-4491EF21171A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79CA144-7A74-444D-8CF3-4491EF21171A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1691DF06-B453-4018-B973-6C1A0539E43D}
+	EndGlobalSection
+EndGlobal
